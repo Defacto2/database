@@ -1,10 +1,10 @@
 # Defacto2 Data Exports
 
-### Current data dump: 15-Jan-2019
+#### Current data dump: 15-Jan-2019
 
 A complete **data dump** of the [Defacto2](https://defacto2.net) database for its file collection, web links and group acronyms.
 
-#### What is here
+### What is here
 
 The data export is available in two formats, SQL and JSON.
 
@@ -24,11 +24,13 @@ JSON is a modern, widely used standard that you can incorporate into application
 
 Enjoy, [Defacto2](https://defacto2.net).
 
-#### Licence
+### Licence
 
 The data and these exports are under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence.
 
-#### How to use the SQL
+---
+
+### How to use the SQL
 
 You need a preconfigured and running database server that can handle MySQL 5.7 syntax.
 
@@ -47,7 +49,9 @@ I recommend using [Adminer](https://www.adminer.org) for data browsing and manag
 
 Though [DBeaver Community](https://dbeaver.io) also works fine.
 
-#### Datasets
+---
+
+### Datasets
 
 The data is broken down into three tables, `files`, `groups` and `netresources`
 
@@ -55,7 +59,7 @@ The data is broken down into three tables, `files`, `groups` and `netresources`
 - `groups` comprise of only initialisms and acronyms for scene groups.
 - `netresources` are online links to other scene resources, usually websites.
 
-##### files - `files-2019-01-15-16-15-57.json`
+#### files - `files-2019-01-15-16-15-57.json`
 
 | Column | Description | Example |
 | --- | --- | --- |
@@ -83,8 +87,8 @@ The data is broken down into three tables, `files`, `groups` and `netresources`
 | file_zip_content | List of files and directories contained in the download archive | DREAM.NFO INTRO.EXE MUSIC TEXT |
 | file_magic_type | File type metadata | Zip archive data, at least v1.0 to extract |
 | preview_image | The name of a file within the archive that was used as a screenshot | |
-| file_integrity_strong | SHA386 hash value of the download | 22370b5e813be3ed31cbb29c59a5f2ada0f36f287258c061c4599728a7ee5614fd34916d6027d15be41f022522799ab9 |
-| file_integrity_weak | MD5 hash value of the download |c00fccc6409a13fa77300b8cf7c7bea2 |
+| file_integrity_strong | SHA386 hash value of the download | 22370b5e81... |
+| file_integrity_weak | MD5 hash value of the download |c00fccc640... |
 | file_last_modified | Last modified date value of the download | 2017-03-19 05:49:14 |
 | platform | Computer platform tag | dOS |
 | section | Category tag | releaseadvert |
