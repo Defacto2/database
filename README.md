@@ -44,8 +44,8 @@ In a terminal use the MySQL client to import the data:
 
 `mysql -u root < defacto2-inno-2019-01-15-16-10-18.sql`
 
-- `-u root` is the mysql sign-in account name
-- `< defacto2-inno-2019-01-15-16-10-18.sql` tells mysql to import the data from the .sql file
+- `-u root` is the database server, sign-in account name
+- `< defacto2-inno-2019-01-15-16-10-18.sql` tells mysql server to import the data from this .sql file
 
 I recommend using [Adminer](https://www.adminer.org) for data browsing and management.
 
