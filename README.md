@@ -4,6 +4,8 @@
 
 A complete **data dump** of the [Defacto2](https://defacto2.net) database for its file collection, web links and group acronyms.
 
+[A direct download link is available](https://github.com/Defacto2/database/releases/download/15012019/database-2019-01-15-ppmd.7z).
+
 ### What is here
 
 The data export is available in two formats, SQL and JSON.
