@@ -34,7 +34,7 @@ The data and these exports are under a [Creative Commons Attribution 4.0 Interna
 
 ### How to use the SQL
 
-You need a preconfigured and running database server that can handle MySQL 5.7 syntax.
+You need a preconfigured and running database server that can handle MySQL 5.7 syntax. Skip ahead to **Use Docker to host the SQL** for a simpler setup.
 
 - [MySQL](https://dev.mysql.com/downloads/mysql/5.7.html) 5.7 Community Server
 - [Percona Server](https://www.percona.com/doc/percona-server/5.7/index.html) 5.7 is a drop in replacement for MySQL 5.7
@@ -50,6 +50,36 @@ In a terminal use the MySQL client to import the data:
 I recommend using [Adminer](https://www.adminer.org) for data browsing and management.
 
 Though [DBeaver Community](https://dbeaver.io) also works fine.
+
+---
+
+### Use Docker to host the SQL
+
+Included is a Docker Compose `stack.yml` configuration for easier usage.
+
+You need both the [Docker Engine](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/) already setup.
+
+Clone and initialize the database.
+
+```sh
+git clone https://github.com/Defacto2/database.git
+cd database
+docker-compose up
+```
+
+Then point your browser to http://localhost:8080. Login as `root` with the password `password`, the database is named *defacto2-inno*. To shutdown the container press **Ctrl-C**.
+
+You can run the container in detached mode.
+
+```sh
+docker-compose up -d
+```
+
+If you ever need to reset the database data.
+```sh
+docker-compose down
+docker-compose up
+```
 
 ---
 
