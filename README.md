@@ -83,7 +83,7 @@ docker-compose start
 To reset or update the database data from the SQL.
 ```sh
 docker-compose down
-docker-compose up
+docker-compose up -d
 ```
 
 ---
