@@ -55,7 +55,7 @@ Though [DBeaver Community](https://dbeaver.io) also works fine.
 
 ### Use Docker to host the SQL
 
-Included is a Docker Compose `stack.yml` configuration for easier usage.
+Included is a Docker Compose `docker-compose.yml` configuration for easier usage.
 
 You need both the [Docker Engine](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/) already setup.
 
@@ -64,18 +64,23 @@ Clone and initialize the database.
 ```sh
 git clone https://github.com/Defacto2/database.git
 cd database
-docker-compose up
-```
-
-Then point your browser to http://localhost:8080. Login as `root` with the password `password`, the database is named *defacto2-inno*. To shutdown the container press **Ctrl-C**.
-
-You can run the container in detached mode.
-
-```sh
 docker-compose up -d
 ```
 
-If you ever need to reset the database data.
+Then point your browser to http://localhost:8080. Login as `root` with the password `password`, the database is named *defacto2-inno*.
+
+To shutdown the container.
+
+```sh
+docker-compose stop
+```
+
+To startup the container.
+```sh
+docker-compose start
+```
+
+To reset or update the database data from the SQL.
 ```sh
 docker-compose down
 docker-compose up
