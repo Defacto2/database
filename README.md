@@ -1,6 +1,18 @@
 # Defacto2 Data Exports
 
-#### Current data dump: 15-Jan-2019
+## Daily MySQL data dumps:
+
+### As of August 2019 there are daily SQL data dumps available for download at https://defacto2.net/sql/
+
+All datasets stored there are compatible with MySQL 5.7.
+
+The `.sql` files beginning with `d2-sql-insert` include `DROP TABLE`, `CREATE TABLE` and `INSERT` statements, to replace all existing tables and data.
+
+The files beginning with `d2-sql-update` use `REPLACE INTO` statements to update any existing data.
+
+---
+
+#### Current GitHub data dump: 15-Jan-2019
 
 A complete **data dump** of the [Defacto2](https://defacto2.net) database for its file collection, web links and group acronyms.
 
