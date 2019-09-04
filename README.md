@@ -1,10 +1,16 @@
 # Defacto2 Data Exports
 
-## Daily MySQL data dumps:
+![GitHub](https://img.shields.io/github/license/Defacto2/database?style=flat-square)
+&nbsp;
+![GitHub Release Date](https://img.shields.io/github/release-date/Defacto2/database?label=last%20export%20commit&style=flat-square)
+![Website](https://img.shields.io/website/https/defacto2.net/sql?label=daily%20data%20dumps&style=flat-square)
+![MySQL](https://img.shields.io/badge/mysql-5.7-blue?style=flat-square)
 
-### As of August 2019 there are daily SQL data dumps available for download at https://defacto2.net/sql/
+### Daily MySQL data dumps:
 
-All datasets stored there are compatible with MySQL 5.7.
+#### As of August 2019 there are daily SQL data dumps available for download at https://defacto2.net/sql/
+
+All datasets stored there are compatible with **MySQL 5.7**.
 
 The `.sql` files beginning with `d2-sql-insert` include `DROP TABLE`, `CREATE TABLE` and `INSERT` statements, to replace all existing tables and data.
 
@@ -12,7 +18,7 @@ The files beginning with `d2-sql-update` use `REPLACE INTO` statements to update
 
 ---
 
-#### Current GitHub data dump: 15-Jan-2019
+#### Current GitHub data dump: 2019-Jan-15
 
 A complete **data dump** of the [Defacto2](https://defacto2.net) database for its file collection, web links and group acronyms.
 
@@ -24,15 +30,15 @@ The data export is available in two formats, SQL and JSON.
 
 SQL allows you to recreate the database using a MySQL 5.7 server installation.
 
-- `defacto2-inno-2019-01-15-16-10-18.sql`
+- `/sql/defacto2-inno-2019-01-15-16-10-18.sql`
 
 JSON is a modern, widely used standard that you can incorporate into applications.
 
-- `files-2019-01-15-16-15-57.json`
-- `groups-2019-01-15-16-16-16.json`
-- `netresources-2019-01-15-16-16-28.json`
+- `/json/files-2019-01-15-16-15-57.json`
+- `/json/groups-2019-01-15-16-16-16.json`
+- `/json/netresources-2019-01-15-16-16-28.json`
 
-- `files-2019-01-15-16-15-57.min.json` is identical to `files-2019-01-15-16-15-57.json` except the newline characters have been removed, the minification was done with [Minify](https://github.com/tdewolff/minify/tree/master/cmd/minify)
+- `/json/files-2019-01-15-16-15-57.min.json` is identical to `/json/files-2019-01-15-16-15-57.json` except the newline characters have been removed, the minification was done with [Minify](https://github.com/tdewolff/minify/tree/master/cmd/minify)
 
 **Please read and adhere to the licence before using this data in any projects**
 
@@ -54,10 +60,10 @@ You need a preconfigured and running database server that can handle MySQL 5.7 s
 
 In a terminal use the MySQL client to import the data:
 
-`mysql -u root < defacto2-inno-2019-01-15-16-10-18.sql`
+`mysql -u root < sql/defacto2-inno-2019-01-15-16-10-18.sql`
 
 - `-u root` is the database server, sign-in account name
-- `< defacto2-inno-2019-01-15-16-10-18.sql` tells mysql server to import the data from this .sql file
+- `< sql/defacto2-inno-2019-01-15-16-10-18.sql` tells mysql server to import the data from this .sql file
 
 I recommend using [Adminer](https://www.adminer.org) for data browsing and management.
 

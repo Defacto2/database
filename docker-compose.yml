@@ -5,7 +5,6 @@
 version: "3.1"
 
 services:
-
   db:
     image: mysql:5.7
     restart: always
@@ -14,7 +13,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
     volumes:
-      - ${PWD}/defacto2-inno-2019-01-15-16-10-18.sql:/docker-entrypoint-initdb.d/import.sql
+      - ${PWD}/sql/defacto2-inno-2019-01-15-16-10-18.sql:/docker-entrypoint-initdb.d/import.sql
 
   adminer:
     image: adminer
