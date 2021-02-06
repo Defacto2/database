@@ -64,7 +64,7 @@ The data is broken down into three tables, `files`, `groups` and `netresources`
 - `groups` comprise of only initialisms and acronyms for scene groups.
 - `netresources` are online links to other scene resources, usually websites.
 
-#### files - `files-2019-01-15-16-15-57.json`
+#### files
 
 | Column | Description | Example |
 | --- | --- | --- |
@@ -116,7 +116,7 @@ The data is broken down into three tables, `files`, `groups` and `netresources`
 | updatedby | The id of the account which updated this record | ADB7C2BF-7221-467B-B813-3636FE4AE16B |
 | updatedat | When this record was last updated | 2017-03-19 05:57:12 |
 
-##### groups - `groups-2019-01-15-16-16-16.json`
+##### groups
 
 | Column | Description | Example |
 | --- | --- | --- |
@@ -124,7 +124,7 @@ The data is broken down into three tables, `files`, `groups` and `netresources`
 | pubname | Unique group id | Razor 1911 |
 | initialisms | Acronym or initialism value | RZR |
 
-##### netresources - `netresources-2019-01-15-16-16-28.json`
+##### netresources
 
 | Column | Description | Example |
 | --- | --- | --- |
