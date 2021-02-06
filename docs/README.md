@@ -1,48 +1,30 @@
 # Defacto2 Data Exports
 
 ![GitHub](https://img.shields.io/github/license/Defacto2/database?style=flat-square)
-&nbsp;
-![GitHub Release Date](https://img.shields.io/github/release-date/Defacto2/database?label=last%20export%20commit&style=flat-square)
 ![Website](https://img.shields.io/website/https/defacto2.net/sql?label=daily%20data%20dumps&style=flat-square)
 ![MySQL](https://img.shields.io/badge/mysql-5.7-blue?style=flat-square)
 
-### Daily MySQL data dumps:
+### Daily MySQL dumps:
 
-#### As of August 2019 there are daily SQL data dumps available for download at https://defacto2.net/sql/
+Defacto2 has daily dumps of the MySQL 5.7 database for download.
 
-All datasets stored there are compatible with **MySQL 5.7**.
+### Insert
 
-The `.sql` files beginning with `d2-sql-insert` include `DROP TABLE`, `CREATE TABLE` and `INSERT` statements, to replace all existing tables and data.
+Daily dump that includes `DROP` `TABLE`, `CREATE TABLE` and `INSERT` statements, to replace all existing tables + data.
 
-The files beginning with `d2-sql-update` use `REPLACE INTO` statements to update any existing data.
+[d2-sql-insert.sql](https://defacto2.net/sql/d2-sql-insert.sql) <small>([sha1](https://defacto2.net/sql/d2-sql-insert.sql.sha1))</small>
+
+### Update
+
+Daily dump that uses `REPLACE INTO` statements to update any existing data.
+
+[d2-sql-update.sql](https://defacto2.net/sql/d2-sql-update.sql) <small>([sha1](https://defacto2.net/sql/d2-sql-update.sql.sha1))</small>
+
+### Backups
+
+Backup SQL data dumps are also available for download: https://defacto2.net/sql/
 
 ---
-
-#### Current GitHub data dump: 2019-Jan-15
-
-A complete **data dump** of the [Defacto2](https://defacto2.net) database for its file collection, web links and group acronyms.
-
-[A direct download link is available](https://github.com/Defacto2/database/releases/download/15012019/database-2019-01-15-ppmd.7z).
-
-### What is here
-
-The data export is available in two formats, SQL and JSON.
-
-SQL allows you to recreate the database using a MySQL 5.7 server installation.
-
-- `/sql/defacto2-inno-2019-01-15-16-10-18.sql`
-
-JSON is a modern, widely used standard that you can incorporate into applications.
-
-- `/json/files-2019-01-15-16-15-57.json`
-- `/json/groups-2019-01-15-16-16-16.json`
-- `/json/netresources-2019-01-15-16-16-28.json`
-
-- `/json/files-2019-01-15-16-15-57.min.json` is identical to `/json/files-2019-01-15-16-15-57.json` except the newline characters have been removed, the minification was done with [Minify](https://github.com/tdewolff/minify/tree/master/cmd/minify)
-
-**Please read and adhere to the licence before using this data in any projects**
-
-Enjoy, [Defacto2](https://defacto2.net).
 
 ### Licence
 
@@ -52,57 +34,25 @@ The data and these exports are under a [Creative Commons Attribution 4.0 Interna
 
 ### How to use the SQL
 
-You need a preconfigured and running database server that can handle MySQL 5.7 syntax. Skip ahead to **Use Docker to host the SQL** for a simpler setup.
+You need a preconfigured and running database server that can handle MySQL 5.7 syntax. Any of these datbase applications are suitable.
 
-- [MySQL](https://dev.mysql.com/downloads/mysql/5.7.html) 5.7 Community Server
-- [Percona Server](https://www.percona.com/doc/percona-server/5.7/index.html) 5.7 is a drop in replacement for MySQL 5.7
-- [MariaDB](https://mariadb.com) 10.2+ is a drop in replacement for MySQL 5.7
+- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/5.7.html) 5.7
+- [Percona Server](https://www.percona.com/doc/percona-server/5.7/index.html) 5.7 *
+- [MariaDB](https://mariadb.com) 10.2+ *
 
-In a terminal use the MySQL client to import the data:
+<small>* Is a drop in replacement for MySQL 5.7</small>
 
-`mysql -u root < sql/defacto2-inno-2019-01-15-16-10-18.sql`
+##### In a terminal use the MySQL client to import the data:
 
-- `-u root` is the database server, sign-in account name
-- `< sql/defacto2-inno-2019-01-15-16-10-18.sql` tells mysql server to import the data from this .sql file
+```bash
+# download the database
+wget https://defacto2.net/sql/d2-sql-insert.sql
 
-I recommend using [Adminer](https://www.adminer.org) for data browsing and management.
-
-Though [DBeaver Community](https://dbeaver.io) also works fine.
-
----
-
-### Use Docker to host the SQL
-
-Included is a Docker Compose `docker-compose.yml` configuration for easier usage.
-
-You need both the [Docker Engine](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/) already setup.
-
-Clone and initialize the database.
-
-```sh
-git clone https://github.com/Defacto2/database.git
-cd database
-docker-compose up -d
+# import the data to the mysql database using the database root account.
+mysql -u root < d2-sql-insert.sql
 ```
 
-Then point your browser to http://localhost:8080. Login as `root` with the password `password`, the database is named *defacto2-inno*.
-
-To shutdown the container.
-
-```sh
-docker-compose stop
-```
-
-To startup the container.
-```sh
-docker-compose start
-```
-
-To reset or update the database data from the SQL.
-```sh
-docker-compose down
-docker-compose up -d
-```
+I recommend using [Adminer](https://www.adminer.org) for data browsing and management, though [DBeaver Community](https://dbeaver.io) also works fine.
 
 ---
 
