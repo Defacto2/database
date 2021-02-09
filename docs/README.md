@@ -1,6 +1,6 @@
 # Defacto2 Data Exports
 
-![GitHub](https://img.shields.io/github/license/Defacto2/database?style=flat-square)
+![GitHub](https://img.shields.io/github/license/Defacto2/database/docs?style=flat-square)
 ![Website](https://img.shields.io/website/https/defacto2.net/sql?label=daily%20data%20dumps&style=flat-square)
 ![MySQL](https://img.shields.io/badge/mysql-5.7-blue?style=flat-square)
 
@@ -34,7 +34,7 @@ The data and these exports are under a [Creative Commons Attribution 4.0 Interna
 
 ### How to use the SQL
 
-You need a preconfigured and running database server that can handle MySQL 5.7 syntax. Any of these datbase applications are suitable.
+You need a preconfigured and running database server that can handle MySQL 5.7 syntax. Any of these database applications are suitable.
 
 - [MySQL Community Server](https://dev.mysql.com/downloads/mysql/5.7.html) 5.7
 - [Percona Server](https://www.percona.com/doc/percona-server/5.7/index.html) 5.7 *
