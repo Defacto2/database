@@ -1,6 +1,5 @@
 # Defacto2 Data Exports
 
-![GitHub](https://img.shields.io/github/license/Defacto2/database/docs?style=flat-square)
 ![Website](https://img.shields.io/website/https/defacto2.net/sql?label=daily%20data%20dumps&style=flat-square)
 ![MySQL](https://img.shields.io/badge/mysql-5.7-blue?style=flat-square)
 
