@@ -27,10 +27,13 @@ Other dated SQL data dumps are also available for download: https://defacto2.net
 [mysql2sqlite](https://github.com/dumblob/mysql2sqlite) will successfully convert `d2-sql-insert.sql` into a SQLite3 database.
 
 ```bash
-# download
+# download the mysql database
+wget https://defacto2.net/sql/d2-sql-insert.sql
+
+# download mysql2sqlite & apply an execute attribute
 wget https://raw.githubusercontent.com/dumblob/mysql2sqlite/master/mysql2sqlite
-# apply execute attribute
 chmod +x mysql2sqlite
+
 # export mysql to sqlite3 database
 ./mysql2sqlite d2-sql-insert.sql | sqlite3 d2.db
 ```
