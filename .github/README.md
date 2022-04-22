@@ -1,28 +1,28 @@
-# Defacto2 Data Exports
+# Defacto2 database exports
 
 ![MySQL](https://img.shields.io/badge/mysql-5.7-blue?style=flat-square)
 
-### Daily MySQL dumps:
+### Daily MySQL dumps
 
-Defacto2 has daily dumps of the MySQL 5.7 database for download.
+Defacto2 releases daily exports of the MySQL 5.7 database for download.
 
-### Insert
+#### Insert
 
-Daily dump that includes `DROP` `TABLE`, `CREATE TABLE` and `INSERT` statements, to replace all existing tables + data.
+The daily export that uses `DROP TABLE`, `CREATE TABLE` and `INSERT` statements, __to replace all existing__ tables and data.
 
-[d2-sql-insert.sql](https://defacto2.net/sql/d2-sql-insert.sql) <small>([sha1](https://defacto2.net/sql/d2-sql-insert.sql.sha1))</small>
+[INSERT SQL](https://defacto2.net/sql/d2-sql-insert.sql) <small>([SHA1](https://defacto2.net/sql/d2-sql-insert.sql.sha1))</small>
 
-### Update
+`d2-sql-insert.sql`
 
-Daily dump that uses `REPLACE INTO` statements to update any existing data.
+#### Update
 
-[d2-sql-update.sql](https://defacto2.net/sql/d2-sql-update.sql) <small>([sha1](https://defacto2.net/sql/d2-sql-update.sql.sha1))</small>
+The daily export that uses `REPLACE INTO` statements __to update__ any existing data.
 
-### Backups
+[UPDATE SQL](https://defacto2.net/sql/d2-sql-update.sql) <small>([SHA1](https://defacto2.net/sql/d2-sql-update.sql.sha1))</small>
 
-Other dated SQL data dumps are also available for download: https://defacto2.net/sql
+`d2-sql-update.sql`
 
-### Export into SQLite3
+#### Migrate to SQLite3
 
 [mysql2sqlite](https://github.com/dumblob/mysql2sqlite) will successfully convert `d2-sql-insert.sql` into a SQLite3 database.
 
@@ -38,7 +38,7 @@ chmod +x mysql2sqlite
 ./mysql2sqlite d2-sql-insert.sql | sqlite3 d2.db
 ```
 
-### Licence
+#### Licence
 
 The data and these exports are under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence.
 
@@ -76,9 +76,9 @@ The data is broken down into three tables, `files`, `groups` and `netresources`
 - `groups` comprise of only initialisms and acronyms for scene groups.
 - `netresources` are online links to other scene resources, usually websites.
 
-#### files
+#### Files
 
-| Column                    | Description                                                         | Example                                    |
+| Column                    | Description                                                         | Example value                              |
 | ------------------------- | ------------------------------------------------------------------- | ------------------------------------------ |
 | id                        | Primary key                                                         | `8968`                                     |
 | uuid                      | Unique identifier used as the stored file and images name           | `b826e39b-66c6-4929-8e5a-f59b07ffaa00`     |
@@ -128,17 +128,17 @@ The data is broken down into three tables, `files`, `groups` and `netresources`
 | updatedby                 | The id of the account which updated this record                     | `ADB7C2BF-7221-467B-B813-3636FE4AE16B`     |
 | updatedat                 | When this record was last updated                                   | 2017-03-19 05:57:12                        |
 
-##### groups
+##### Groups
 
-| Column      | Description                 | Example    |
+| Column      | Description                 | Example value    |
 | ----------- | --------------------------- | ---------- |
 | id          | Primary key                 | `9`        |
 | pubname     | Unique group id             | Razor 1911 |
 | initialisms | Acronym or initialism value | RZR        |
 
-##### netresources
+##### Netresources
 
-| Column           | Description                                        | Example                                            |
+| Column           | Description                                        | Example value                                            |
 | ---------------- | -------------------------------------------------- | -------------------------------------------------- |
 | id               | Primary key                                        | `675`                                              |
 | uuid             | Unique identifier                                  | `6c43b299-d7da-4670-a687-70c642b3a33e`             |
