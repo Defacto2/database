@@ -1,0 +1,22 @@
+# The Defacto2 Database on MySQL 5.7 with Adminer
+# Adminer image: https://hub.docker.com/_/adminer
+# MySQL image: https://hub.docker.com/_/mysql
+
+version: "3.1"
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ${PWD}/sql/defacto2-inno-2019-01-15-16-10-18.sql:/docker-entrypoint-initdb.d/import.sql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

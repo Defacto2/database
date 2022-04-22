@@ -1,0 +1,1663 @@
+{
+"groups": [
+{
+	"id": "1",
+	"pubname": "Pirates With Attitude",
+	"initialisms": "PWA"
+}
+, {
+	"id": "3",
+	"pubname": "Superior Art Creations",
+	"initialisms": "SAC"
+}
+, {
+	"id": "4",
+	"pubname": "Tristar",
+	"initialisms": "TRS"
+}
+, {
+	"id": "5",
+	"pubname": "ANSI Creators In Demand",
+	"initialisms": "ACiD"
+}
+, {
+	"id": "6",
+	"pubname": "Amnesia",
+	"initialisms": "AMN"
+}
+, {
+	"id": "7",
+	"pubname": "Backlash",
+	"initialisms": "BLH"
+}
+, {
+	"id": "8",
+	"pubname": "Bentley Sidwell Productions",
+	"initialisms": "BSP"
+}
+, {
+	"id": "9",
+	"pubname": "Razor 1911",
+	"initialisms": "RZR"
+}
+, {
+	"id": "10",
+	"pubname": "International Network Of Crackers",
+	"initialisms": "INC"
+}
+, {
+	"id": "11",
+	"pubname": "Fairlight",
+	"initialisms": "FLT"
+}
+, {
+	"id": "12",
+	"pubname": "The Dream Team",
+	"initialisms": "TDT"
+}
+, {
+	"id": "13",
+	"pubname": "Insane Creators Enterprise",
+	"initialisms": "iCE"
+}
+, {
+	"id": "14",
+	"pubname": "The Crazed Asylum",
+	"initialisms": "TCA"
+}
+, {
+	"id": "15",
+	"pubname": "New York Crackers",
+	"initialisms": "NYC"
+}
+, {
+	"id": "16",
+	"pubname": "Aces Of ANSI Art",
+	"initialisms": "AAA"
+}
+, {
+	"id": "17",
+	"pubname": "Advanced Pirate Technology",
+	"initialisms": "APT"
+}
+, {
+	"id": "18",
+	"pubname": "Affinity",
+	"initialisms": "AFT"
+}
+, {
+	"id": "19",
+	"pubname": "Anti Warez Association",
+	"initialisms": "AWA"
+}
+, {
+	"id": "20",
+	"pubname": "Artists In Revolt",
+	"initialisms": "AiR"
+}
+, {
+	"id": "21",
+	"pubname": "",
+	"initialisms": ""
+}
+, {
+	"id": "22",
+	"pubname": "Trip 2 Hell",
+	"initialisms": "T2H"
+}
+, {
+	"id": "23",
+	"pubname": "Tristar & Red Sector Inc.",
+	"initialisms": "TRSi"
+}
+, {
+	"id": "24",
+	"pubname": "United Cracking Force",
+	"initialisms": "UCF"
+}
+, {
+	"id": "25",
+	"pubname": "United Software Association",
+	"initialisms": "USA"
+}
+, {
+	"id": "26",
+	"pubname": "INC Utility Division",
+	"initialisms": "INCUD"
+}
+, {
+	"id": "27",
+	"pubname": "Pirates In Legion",
+	"initialisms": "PiL"
+}
+, {
+	"id": "28",
+	"pubname": "Pirates Analyze Warez",
+	"initialisms": "PAW"
+}
+, {
+	"id": "29",
+	"pubname": "Phrozen Crew",
+	"initialisms": "PC"
+}
+, {
+	"id": "30",
+	"pubname": "Pentagram",
+	"initialisms": "PTG"
+}
+, {
+	"id": "31",
+	"pubname": "Paradigm",
+	"initialisms": "PDM"
+}
+, {
+	"id": "32",
+	"pubname": "Paradox",
+	"initialisms": "PDX"
+}
+, {
+	"id": "33",
+	"pubname": "Class",
+	"initialisms": "CLS"
+}
+, {
+	"id": "34",
+	"pubname": "The Humble Guys",
+	"initialisms": "THG"
+}
+, {
+	"id": "35",
+	"pubname": "Razor 1911 CD Division",
+	"initialisms": "RazorCD"
+}
+, {
+	"id": "36",
+	"pubname": "Reality Check Network",
+	"initialisms": "RCN"
+}
+, {
+	"id": "37",
+	"pubname": "Public Enemy",
+	"initialisms": "PE"
+}
+, {
+	"id": "38",
+	"pubname": "The Dream Team, Tristar & Red Sector Inc.",
+	"initialisms": "TDT\/TRSi"
+}
+, {
+	"id": "39",
+	"pubname": "United Couriers",
+	"initialisms": "UC"
+}
+, {
+	"id": "40",
+	"pubname": "United Software Association, Fairlight",
+	"initialisms": "USA\/FLT"
+}
+, {
+	"id": "41",
+	"pubname": "United Cracking Force, Phrozen Crew",
+	"initialisms": "UCF\/PC"
+}
+, {
+	"id": "42",
+	"pubname": "The Untouchables",
+	"initialisms": "UNT"
+}
+, {
+	"id": "43",
+	"pubname": "Miami Cracking Machine",
+	"initialisms": "MCM"
+}
+, {
+	"id": "44",
+	"pubname": "Light Speed Distributors",
+	"initialisms": "LSD"
+}
+, {
+	"id": "45",
+	"pubname": "Hybrid",
+	"initialisms": "HYB"
+}
+, {
+	"id": "46",
+	"pubname": "Hoodlum",
+	"initialisms": "HLM"
+}
+, {
+	"id": "47",
+	"pubname": "High Voltage",
+	"initialisms": "HV"
+}
+, {
+	"id": "48",
+	"pubname": "Graphics Rendered In Magnificence",
+	"initialisms": "GRiM"
+}
+, {
+	"id": "49",
+	"pubname": "Gorgeous Ladies Of Warez",
+	"initialisms": "GLoW"
+}
+, {
+	"id": "50",
+	"pubname": "German Warez Alliance",
+	"initialisms": "GWA"
+}
+, {
+	"id": "51",
+	"pubname": "Genesis",
+	"initialisms": "gns"
+}
+, {
+	"id": "52",
+	"pubname": "Future Brain Inc",
+	"initialisms": "FBi"
+}
+, {
+	"id": "53",
+	"pubname": "Eagle Soft Incorporated",
+	"initialisms": "ESI"
+}
+, {
+	"id": "54",
+	"pubname": "Dynasty",
+	"initialisms": "DNS"
+}
+, {
+	"id": "55",
+	"pubname": "Drink Or Die",
+	"initialisms": "DoD"
+}
+, {
+	"id": "56",
+	"pubname": "Drunken Rom Group",
+	"initialisms": "DRG"
+}
+, {
+	"id": "57",
+	"pubname": "Deviance",
+	"initialisms": "Dev"
+}
+, {
+	"id": "58",
+	"pubname": "Defacto",
+	"initialisms": "df"
+}
+, {
+	"id": "60",
+	"pubname": "2000AD",
+	"initialisms": "2KAD"
+}
+, {
+	"id": "61",
+	"pubname": "2nd Front FTP",
+	"initialisms": "2NDF"
+}
+, {
+	"id": "62",
+	"pubname": "500 Nations BBS",
+	"initialisms": "500N"
+}
+, {
+	"id": "63",
+	"pubname": "Advanced Art Of Cracking Group",
+	"initialisms": "AAOCG"
+}
+, {
+	"id": "64",
+	"pubname": "Agents Of Fortune BBS",
+	"initialisms": "AOF"
+}
+, {
+	"id": "65",
+	"pubname": "Akira Project BBS",
+	"initialisms": "Akira"
+}
+, {
+	"id": "69",
+	"pubname": "Prestige",
+	"initialisms": "PSG"
+}
+, {
+	"id": "70",
+	"pubname": "Inquisition",
+	"initialisms": "INQ"
+}
+, {
+	"id": "71",
+	"pubname": "The Council",
+	"initialisms": "CNC"
+}
+, {
+	"id": "73",
+	"pubname": "Alpha Flight",
+	"initialisms": "AFL"
+}
+, {
+	"id": "74",
+	"pubname": "Ages",
+	"initialisms": "AGS"
+}
+, {
+	"id": "75",
+	"pubname": "Bad Conscious Inc",
+	"initialisms": "BCi"
+}
+, {
+	"id": "76",
+	"pubname": "BBS And Users Digest",
+	"initialisms": "BAUD"
+}
+, {
+	"id": "77",
+	"pubname": "Beyond Akira BBS",
+	"initialisms": "Akira"
+}
+, {
+	"id": "78",
+	"pubname": "Bitchin ANSI Design",
+	"initialisms": "BAD"
+}
+, {
+	"id": "79",
+	"pubname": "Black Squadron",
+	"initialisms": "BS"
+}
+, {
+	"id": "80",
+	"pubname": "Blades Of Steel",
+	"initialisms": "BOS"
+}
+, {
+	"id": "81",
+	"pubname": "Blizzard",
+	"initialisms": "BLZ"
+}
+, {
+	"id": "82",
+	"pubname": "Boys From Company C",
+	"initialisms": "BCC"
+}
+, {
+	"id": "83",
+	"pubname": "Brand Beer 2 FTP",
+	"initialisms": "BB2"
+}
+, {
+	"id": "84",
+	"pubname": "Brotherhood Of Warez",
+	"initialisms": "BOW"
+}
+, {
+	"id": "85",
+	"pubname": "Bundskriminalamt",
+	"initialisms": "BUN"
+}
+, {
+	"id": "86",
+	"pubname": "Canadian Born Coders",
+	"initialisms": "CBC"
+}
+, {
+	"id": "87",
+	"pubname": "Canadian Pirates Inc",
+	"initialisms": "CPI"
+}
+, {
+	"id": "88",
+	"pubname": "CD Images For The Elite",
+	"initialisms": "CiFE"
+}
+, {
+	"id": "89",
+	"pubname": "Cheat Requests For Underground Elite",
+	"initialisms": "CRUE"
+}
+, {
+	"id": "90",
+	"pubname": "Chemical Reaction",
+	"initialisms": "CRO"
+}
+, {
+	"id": "91",
+	"pubname": "Cloak N Dagger BBS",
+	"initialisms": "Cloak"
+}
+, {
+	"id": "92",
+	"pubname": "Corporation For Public Cybercasting 2001",
+	"initialisms": "CPC 2001"
+}
+, {
+	"id": "93",
+	"pubname": "Crackers In Action",
+	"initialisms": "CIA"
+}
+, {
+	"id": "94",
+	"pubname": "Da Breaker Crew",
+	"initialisms": "DBC"
+}
+, {
+	"id": "95",
+	"pubname": "Defacto2",
+	"initialisms": "DF2"
+}
+, {
+	"id": "96",
+	"pubname": "Defacto2.net",
+	"initialisms": "DF2"
+}
+, {
+	"id": "97",
+	"pubname": "Devotion",
+	"initialisms": "DEV"
+}
+, {
+	"id": "98",
+	"pubname": "Digital Traders",
+	"initialisms": "DGT"
+}
+, {
+	"id": "99",
+	"pubname": "Divide By Zero",
+	"initialisms": "DBZ"
+}
+, {
+	"id": "100",
+	"pubname": "Divine",
+	"initialisms": "DVN"
+}
+, {
+	"id": "101",
+	"pubname": "Dynamix",
+	"initialisms": "DNX"
+}
+, {
+	"id": "102",
+	"pubname": "Eclipse",
+	"initialisms": "ECL"
+}
+, {
+	"id": "103",
+	"pubname": "Fairlight DOX",
+	"initialisms": "FLTDOX"
+}
+, {
+	"id": "104",
+	"pubname": "Faith",
+	"initialisms": "FTH"
+}
+, {
+	"id": "105",
+	"pubname": "Fantastic 4 Cracking Group",
+	"initialisms": "F4C"
+}
+, {
+	"id": "106",
+	"pubname": "Fast Action Trading Elite",
+	"initialisms": "FATE"
+}
+, {
+	"id": "107",
+	"pubname": "Fastest Of The Elite Couriers",
+	"initialisms": "FOE"
+}
+, {
+	"id": "108",
+	"pubname": "Fatal Connection",
+	"initialisms": "Fatal"
+}
+, {
+	"id": "109",
+	"pubname": "Federal Cracking Consortium",
+	"initialisms": "FCC"
+}
+, {
+	"id": "110",
+	"pubname": "Fusion",
+	"initialisms": "FSN"
+}
+, {
+	"id": "111",
+	"pubname": "Future Scene News",
+	"initialisms": "FSN"
+}
+, {
+	"id": "112",
+	"pubname": "German Trading Alliance",
+	"initialisms": "GTA"
+}
+, {
+	"id": "113",
+	"pubname": "Hummers",
+	"initialisms": "HUM"
+}
+, {
+	"id": "114",
+	"pubname": "Hybrid Christmas E-Mag",
+	"initialisms": "HBD-Xmas"
+}
+, {
+	"id": "115",
+	"pubname": "Illuminatus",
+	"initialisms": "ILL"
+}
+, {
+	"id": "116",
+	"pubname": "Independent",
+	"initialisms": "IND"
+}
+, {
+	"id": "117",
+	"pubname": "Infinity",
+	"initialisms": "INF"
+}
+, {
+	"id": "118",
+	"pubname": "Insanity",
+	"initialisms": "insan"
+}
+, {
+	"id": "119",
+	"pubname": "International Network Of Crackers, Public Enemy",
+	"initialisms": "INC\/PE"
+}
+, {
+	"id": "120",
+	"pubname": "Just The Facts",
+	"initialisms": "JTF"
+}
+, {
+	"id": "121",
+	"pubname": "Kryn Headhunters",
+	"initialisms": "Kryn"
+}
+, {
+	"id": "122",
+	"pubname": "Lamers Of Power",
+	"initialisms": "LOP"
+}
+, {
+	"id": "123",
+	"pubname": "Lancelot",
+	"initialisms": "Lance"
+}
+, {
+	"id": "124",
+	"pubname": "Lancelot 2",
+	"initialisms": "Lance2"
+}
+, {
+	"id": "125",
+	"pubname": "Legacy",
+	"initialisms": "LGC"
+}
+, {
+	"id": "126",
+	"pubname": "Legend",
+	"initialisms": "LGD"
+}
+, {
+	"id": "127",
+	"pubname": "Legion Of Doom",
+	"initialisms": "LOD"
+}
+, {
+	"id": "128",
+	"pubname": "Laxity",
+	"initialisms": "LXT"
+}
+, {
+	"id": "129",
+	"pubname": "Lightforce",
+	"initialisms": "lfce"
+}
+, {
+	"id": "130",
+	"pubname": "Millenium",
+	"initialisms": "MNM"
+}
+, {
+	"id": "131",
+	"pubname": "Modders On Drugs",
+	"initialisms": "MOD"
+}
+, {
+	"id": "132",
+	"pubname": "National Elite Underground Alliance",
+	"initialisms": "NEUA"
+}
+, {
+	"id": "133",
+	"pubname": "Nemesis",
+	"initialisms": "NMS"
+}
+, {
+	"id": "134",
+	"pubname": "Network Software Association",
+	"initialisms": "NSA"
+}
+, {
+	"id": "135",
+	"pubname": "NoClass",
+	"initialisms": "NOCLS"
+}
+, {
+	"id": "136",
+	"pubname": "Nokturnal Trading Alliance",
+	"initialisms": "NTA"
+}
+, {
+	"id": "137",
+	"pubname": "North American Pirate-Phreak Association",
+	"initialisms": "NAP\/PA"
+}
+, {
+	"id": "138",
+	"pubname": "Oceanine",
+	"initialisms": "OCN"
+}
+, {
+	"id": "139",
+	"pubname": "Origin",
+	"initialisms": "OGN"
+}
+, {
+	"id": "140",
+	"pubname": "PDM ISO",
+	"initialisms": "Paradigm"
+}
+, {
+	"id": "141",
+	"pubname": "Pirates Sick Of Initials",
+	"initialisms": "PSi"
+}
+, {
+	"id": "142",
+	"pubname": "Rebels",
+	"initialisms": "RBS"
+}
+, {
+	"id": "143",
+	"pubname": "Reflux",
+	"initialisms": "RLX"
+}
+, {
+	"id": "144",
+	"pubname": "Relativity",
+	"initialisms": "Rev"
+}
+, {
+	"id": "145",
+	"pubname": "Release On Rampage",
+	"initialisms": "RoR"
+}
+, {
+	"id": "146",
+	"pubname": "Reloaded",
+	"initialisms": "RLD"
+}
+, {
+	"id": "147",
+	"pubname": "Request To Send",
+	"initialisms": "RTS"
+}
+, {
+	"id": "148",
+	"pubname": "Rise In Superior Couriering",
+	"initialisms": "RiSC"
+}
+, {
+	"id": "149",
+	"pubname": "ROM 1911",
+	"initialisms": "RZR"
+}
+, {
+	"id": "150",
+	"pubname": "RomLight",
+	"initialisms": "Fairlight"
+}
+, {
+	"id": "151",
+	"pubname": "Scoopex",
+	"initialisms": "SPX"
+}
+, {
+	"id": "152",
+	"pubname": "Scooby Snack Magazine",
+	"initialisms": "SSM"
+}
+, {
+	"id": "153",
+	"pubname": "Skillion",
+	"initialisms": "SKN"
+}
+, {
+	"id": "154",
+	"pubname": "Seek N Destroy",
+	"initialisms": "SND"
+}
+, {
+	"id": "155",
+	"pubname": "Share And Enjoy",
+	"initialisms": "SAE"
+}
+, {
+	"id": "156",
+	"pubname": "Silicon Dream Artists",
+	"initialisms": "SDA"
+}
+, {
+	"id": "157",
+	"pubname": "Skid Row",
+	"initialisms": "SR"
+}
+, {
+	"id": "158",
+	"pubname": "Sodom",
+	"initialisms": "SDM"
+}
+, {
+	"id": "159",
+	"pubname": "Software Chronicles Digest",
+	"initialisms": "SCD"
+}
+, {
+	"id": "160",
+	"pubname": "Solitudes",
+	"initialisms": "SLT"
+}
+, {
+	"id": "161",
+	"pubname": "Standards Of Piracy Association",
+	"initialisms": "SPA"
+}
+, {
+	"id": "162",
+	"pubname": "The Digital Underground BBS",
+	"initialisms": "TDU"
+}
+, {
+	"id": "163",
+	"pubname": "Vitality",
+	"initialisms": "VTY"
+}
+, {
+	"id": "164",
+	"pubname": "Virility",
+	"initialisms": "VRL"
+}
+, {
+	"id": "165",
+	"pubname": "United States Courier Report",
+	"initialisms": "uscr"
+}
+, {
+	"id": "166",
+	"pubname": "Unleashed",
+	"initialisms": "UNL"
+}
+, {
+	"id": "167",
+	"pubname": "Tyranny",
+	"initialisms": "TRN"
+}
+, {
+	"id": "168",
+	"pubname": "The Week In Warez",
+	"initialisms": "WWN"
+}
+, {
+	"id": "169",
+	"pubname": "The Wonder Twins",
+	"initialisms": "TWT"
+}
+, {
+	"id": "170",
+	"pubname": "The Underground Council",
+	"initialisms": "UGC"
+}
+, {
+	"id": "171",
+	"pubname": "The Sysops Association Network",
+	"initialisms": "TSAN"
+}
+, {
+	"id": "172",
+	"pubname": "The Software Review",
+	"initialisms": "TSR"
+}
+, {
+	"id": "173",
+	"pubname": "The Players Club",
+	"initialisms": "TPC"
+}
+, {
+	"id": "174",
+	"pubname": "The Pirate Syndicate",
+	"initialisms": "TPS"
+}
+, {
+	"id": "175",
+	"pubname": "The Outlaws",
+	"initialisms": "TOL"
+}
+, {
+	"id": "176",
+	"pubname": "The Original Funny Guys",
+	"initialisms": "OFG, The Humble Guys"
+}
+, {
+	"id": "177",
+	"pubname": "The One And Only",
+	"initialisms": "TOAO"
+}
+, {
+	"id": "178",
+	"pubname": "The Nova Team",
+	"initialisms": "TNT"
+}
+, {
+	"id": "179",
+	"pubname": "The North West Connection",
+	"initialisms": "TNWC"
+}
+, {
+	"id": "180",
+	"pubname": "The Net Monkey Weekly Report",
+	"initialisms": "NWR"
+}
+, {
+	"id": "181",
+	"pubname": "The Naked Truth Magazine",
+	"initialisms": "NTM"
+}
+, {
+	"id": "182",
+	"pubname": "The Nameless Ones",
+	"initialisms": "TNO"
+}
+, {
+	"id": "183",
+	"pubname": "The Gamers Edge",
+	"initialisms": "TGE"
+}
+, {
+	"id": "184",
+	"pubname": "The Game Review",
+	"initialisms": "TGR"
+}
+, {
+	"id": "185",
+	"pubname": "The Force Team",
+	"initialisms": "TFT"
+}
+, {
+	"id": "186",
+	"pubname": "The Corporation",
+	"initialisms": "Corp"
+}
+, {
+	"id": "187",
+	"pubname": "1 Man Crew BBS",
+	"initialisms": "1MC"
+}
+, {
+	"id": "188",
+	"pubname": "Adrenalin",
+	"initialisms": "adren"
+}
+, {
+	"id": "189",
+	"pubname": "Alpha Couriers",
+	"initialisms": "ALPHA"
+}
+, {
+	"id": "190",
+	"pubname": "Anemia",
+	"initialisms": "ANM"
+}
+, {
+	"id": "191",
+	"pubname": "Bay Area Rapid Transfers BBS",
+	"initialisms": "BART"
+}
+, {
+	"id": "192",
+	"pubname": "BBS-A-Holic BBS",
+	"initialisms": "BBSAHolc"
+}
+, {
+	"id": "193",
+	"pubname": "Beyond The Cemetery BBS",
+	"initialisms": "BTC"
+}
+, {
+	"id": "194",
+	"pubname": "Beyond The Realm Of Reality BBS",
+	"initialisms": "Realm"
+}
+, {
+	"id": "195",
+	"pubname": "Bimbo Palace File Distribution BBS",
+	"initialisms": "BP"
+}
+, {
+	"id": "196",
+	"pubname": "Body Count BBS",
+	"initialisms": "BC"
+}
+, {
+	"id": "197",
+	"pubname": "ByteGarden",
+	"initialisms": "BTG"
+}
+, {
+	"id": "198",
+	"pubname": "Citadel Of Chaos BBS",
+	"initialisms": "COC"
+}
+, {
+	"id": "199",
+	"pubname": "Courier Weektop Scorecard",
+	"initialisms": "CWS"
+}
+, {
+	"id": "200",
+	"pubname": "Couriers Of Proven Software",
+	"initialisms": "COPS"
+}
+, {
+	"id": "201",
+	"pubname": "Crack Report Weekly",
+	"initialisms": "CRW"
+}
+, {
+	"id": "202",
+	"pubname": "Cracking 101",
+	"initialisms": "C101"
+}
+, {
+	"id": "203",
+	"pubname": "Creators Of Intense Art",
+	"initialisms": "CIA"
+}
+, {
+	"id": "204",
+	"pubname": "Crewel Lye BBS",
+	"initialisms": "CRWL"
+}
+, {
+	"id": "205",
+	"pubname": "Crude",
+	"initialisms": "CRD"
+}
+, {
+	"id": "206",
+	"pubname": "Dead Pirates Society",
+	"initialisms": "DPS"
+}
+, {
+	"id": "207",
+	"pubname": "Death Row BBS",
+	"initialisms": "DR"
+}
+, {
+	"id": "208",
+	"pubname": "Digital Zone BBS",
+	"initialisms": "DZ"
+}
+, {
+	"id": "209",
+	"pubname": "Dimension",
+	"initialisms": "DMS"
+}
+, {
+	"id": "210",
+	"pubname": "Distinct",
+	"initialisms": "DTN"
+}
+, {
+	"id": "211",
+	"pubname": "DiGerati",
+	"initialisms": "DGT"
+}
+, {
+	"id": "212",
+	"pubname": "Demented Dimensions",
+	"initialisms": "DD"
+}
+, {
+	"id": "213",
+	"pubname": "Dreadloc",
+	"initialisms": "DLC"
+}
+, {
+	"id": "214",
+	"pubname": "Druids Keep BBS",
+	"initialisms": "DK"
+}
+, {
+	"id": "215",
+	"pubname": "Dust N Bones BBS",
+	"initialisms": "DNB"
+}
+, {
+	"id": "216",
+	"pubname": "Dynamic Technologies",
+	"initialisms": "DYT"
+}
+, {
+	"id": "217",
+	"pubname": "Eiserne Front BBS",
+	"initialisms": "EF"
+}
+, {
+	"id": "218",
+	"pubname": "Empire Of Darkness",
+	"initialisms": "EOD"
+}
+, {
+	"id": "219",
+	"pubname": "Energy",
+	"initialisms": "NRG"
+}
+, {
+	"id": "220",
+	"pubname": "Epsilon",
+	"initialisms": "EPS"
+}
+, {
+	"id": "221",
+	"pubname": "EQUiNOX",
+	"initialisms": "EQX"
+}
+, {
+	"id": "222",
+	"pubname": "Explosion",
+	"initialisms": "EPN"
+}
+, {
+	"id": "223",
+	"pubname": "Fatal Future BBS",
+	"initialisms": "FF"
+}
+, {
+	"id": "224",
+	"pubname": "Fate Gate BBS",
+	"initialisms": "FG"
+}
+, {
+	"id": "225",
+	"pubname": "Fighting For Fun",
+	"initialisms": "FFF"
+}
+, {
+	"id": "226",
+	"pubname": "Frontline Scene Release Report",
+	"initialisms": "FTL"
+}
+, {
+	"id": "227",
+	"pubname": "Gods Realm BBS",
+	"initialisms": "GR"
+}
+, {
+	"id": "228",
+	"pubname": "Heart Of Gold BBS",
+	"initialisms": "HOG"
+}
+, {
+	"id": "229",
+	"pubname": "High Tech Couriers",
+	"initialisms": "HTC"
+}
+, {
+	"id": "230",
+	"pubname": "Illusions Of Integraty BBS",
+	"initialisms": "IOI"
+}
+, {
+	"id": "231",
+	"pubname": "Just 4 Fun BBS",
+	"initialisms": "J4F"
+}
+, {
+	"id": "232",
+	"pubname": "Knights Of The Round Table",
+	"initialisms": "KORT"
+}
+, {
+	"id": "233",
+	"pubname": "Knights Of The Round Table BBS",
+	"initialisms": "KORT"
+}
+, {
+	"id": "234",
+	"pubname": "Midnight Oil BBS",
+	"initialisms": "Oil"
+}
+, {
+	"id": "235",
+	"pubname": "Motiv8",
+	"initialisms": "M8"
+}
+, {
+	"id": "236",
+	"pubname": "Mystery BBS",
+	"initialisms": "Myst"
+}
+, {
+	"id": "237",
+	"pubname": "Napalm",
+	"initialisms": "NPM"
+}
+, {
+	"id": "238",
+	"pubname": "Nexus",
+	"initialisms": "NXS"
+}
+, {
+	"id": "239",
+	"pubname": "Old Warez INC",
+	"initialisms": "OWI"
+}
+, {
+	"id": "240",
+	"pubname": "Pirates Gone Crazy",
+	"initialisms": "PGC"
+}
+, {
+	"id": "241",
+	"pubname": "Postmortem",
+	"initialisms": "PM"
+}
+, {
+	"id": "242",
+	"pubname": "Prozacs Personal Gaming Report",
+	"initialisms": "PPGR"
+}
+, {
+	"id": "243",
+	"pubname": "Quartex",
+	"initialisms": "QTX"
+}
+, {
+	"id": "244",
+	"pubname": "Resistance Is Futile",
+	"initialisms": "RIF"
+}
+, {
+	"id": "245",
+	"pubname": "Republic Banana",
+	"initialisms": "RB"
+}
+, {
+	"id": "246",
+	"pubname": "Shogunat BBS",
+	"initialisms": "SHOG"
+}
+, {
+	"id": "247",
+	"pubname": "Splatter House BBS",
+	"initialisms": "SH"
+}
+, {
+	"id": "248",
+	"pubname": "Support Headquarters BBS",
+	"initialisms": "SHQ"
+}
+, {
+	"id": "249",
+	"pubname": "Syndicate BBS",
+	"initialisms": "$YN"
+}
+, {
+	"id": "250",
+	"pubname": "TeaM S.H.W.Z HyperReal World Zone",
+	"initialisms": "SHWZ"
+}
+, {
+	"id": "251",
+	"pubname": "The Corner Deli FTP",
+	"initialisms": "TCD"
+}
+, {
+	"id": "252",
+	"pubname": "The Millennium Group",
+	"initialisms": "TMG"
+}
+, {
+	"id": "253",
+	"pubname": "The Rebel Alliance",
+	"initialisms": "TRA"
+}
+, {
+	"id": "254",
+	"pubname": "The Toxic Dump BBS",
+	"initialisms": "TTD"
+}
+, {
+	"id": "255",
+	"pubname": "Tower Of Sorcery BBS",
+	"initialisms": "TOS"
+}
+, {
+	"id": "256",
+	"pubname": "Twenty One Twelve BBS",
+	"initialisms": "2112"
+}
+, {
+	"id": "257",
+	"pubname": "Vengeance",
+	"initialisms": "VGN"
+}
+, {
+	"id": "258",
+	"pubname": "The International House O Pancakes BBS",
+	"initialisms": "IHOP"
+}
+, {
+	"id": "259",
+	"pubname": "Identity Crisis FTP",
+	"initialisms": "IC"
+}
+, {
+	"id": "260",
+	"pubname": "Foundation 2 FTP",
+	"initialisms": "F2"
+}
+, {
+	"id": "262",
+	"pubname": "Digital Systems Transferring BBS",
+	"initialisms": "DST"
+}
+, {
+	"id": "263",
+	"pubname": "Cold Hell FTP",
+	"initialisms": "Ch"
+}
+, {
+	"id": "264",
+	"pubname": "The House Of Rage BBS",
+	"initialisms": "THOR"
+}
+, {
+	"id": "265",
+	"pubname": "Federation Of Free Traders",
+	"initialisms": "FOFT"
+}
+, {
+	"id": "266",
+	"pubname": "Guild Of Distributors",
+	"initialisms": "Gods"
+}
+, {
+	"id": "267",
+	"pubname": "United Legion Of Couriers",
+	"initialisms": "ULOC"
+}
+, {
+	"id": "268",
+	"pubname": "Arsonistz On Fire",
+	"initialisms": "AoF"
+}
+, {
+	"id": "269",
+	"pubname": "The Insane Asylum BBS",
+	"initialisms": "TIA"
+}
+, {
+	"id": "270",
+	"pubname": "International Cracking Crew",
+	"initialisms": "ICC"
+}
+, {
+	"id": "271",
+	"pubname": "Swat",
+	"initialisms": "Special Wares Acquisition Team"
+}
+, {
+	"id": "272",
+	"pubname": "IDD",
+	"initialisms": "International Network Of Crackers Documentation Division"
+}
+, {
+	"id": "273",
+	"pubname": "PC-Cracking Service",
+	"initialisms": "PC-CS"
+}
+, {
+	"id": "274",
+	"pubname": "International Network Of Crackers Documentation Division",
+	"initialisms": "IDD"
+}
+, {
+	"id": "275",
+	"pubname": "Police Leech Dump FTP",
+	"initialisms": "PLD"
+}
+, {
+	"id": "276",
+	"pubname": "DarkSide Couriers",
+	"initialisms": "DSC"
+}
+, {
+	"id": "277",
+	"pubname": "Damn Excellent ANSI Design",
+	"initialisms": "DEAD"
+}
+, {
+	"id": "278",
+	"pubname": "Distributors Of Classic Warez",
+	"initialisms": "DCW"
+}
+, {
+	"id": "279",
+	"pubname": "Divide By Zero FTP",
+	"initialisms": "DBZ"
+}
+, {
+	"id": "280",
+	"pubname": "DVNiSO",
+	"initialisms": "DVN"
+}
+, {
+	"id": "281",
+	"pubname": "ESP Pirates",
+	"initialisms": "ESP"
+}
+, {
+	"id": "282",
+	"pubname": "File Propulsion System",
+	"initialisms": "FPS"
+}
+, {
+	"id": "283",
+	"pubname": "Fire Site FTP",
+	"initialisms": "FS"
+}
+, {
+	"id": "284",
+	"pubname": "Fucked Beyond Repair",
+	"initialisms": "FBR"
+}
+, {
+	"id": "285",
+	"pubname": "Fucking Sweet Warez",
+	"initialisms": "FSW"
+}
+, {
+	"id": "286",
+	"pubname": "Immersion",
+	"initialisms": "IMS"
+}
+, {
+	"id": "287",
+	"pubname": "Licensed To Draw",
+	"initialisms": "LTD"
+}
+, {
+	"id": "288",
+	"pubname": "Malicious Art Denomination",
+	"initialisms": "MAD"
+}
+, {
+	"id": "289",
+	"pubname": "Lucid",
+	"initialisms": "LCD"
+}
+, {
+	"id": "290",
+	"pubname": "Orion",
+	"initialisms": "ORN"
+}
+, {
+	"id": "291",
+	"pubname": "Partners In Crime",
+	"initialisms": "PIC"
+}
+, {
+	"id": "292",
+	"pubname": "Real Time Pirates",
+	"initialisms": "RTP"
+}
+, {
+	"id": "293",
+	"pubname": "Relentless Pursuit Of Magnificence",
+	"initialisms": "RPM"
+}
+, {
+	"id": "294",
+	"pubname": "Scandal",
+	"initialisms": "SCL"
+}
+, {
+	"id": "295",
+	"pubname": "Software Pirates, Inc.",
+	"initialisms": "SPI"
+}
+, {
+	"id": "296",
+	"pubname": "The Warez Alliance",
+	"initialisms": "TWA"
+}
+, {
+	"id": "297",
+	"pubname": "Terror Zone Underground",
+	"initialisms": "TZU"
+}
+, {
+	"id": "298",
+	"pubname": "United Group International",
+	"initialisms": "UGI"
+}
+, {
+	"id": "299",
+	"pubname": "United Traders Of Germany",
+	"initialisms": "UTG"
+}
+, {
+	"id": "300",
+	"pubname": "World Wide Couriers",
+	"initialisms": "WWC"
+}
+, {
+	"id": "301",
+	"pubname": "Youngsters Against McAfee Production",
+	"initialisms": "YAM"
+}
+, {
+	"id": "302",
+	"pubname": "Surprise Productions",
+	"initialisms": "S!P"
+}
+, {
+	"id": "303",
+	"pubname": "Future Crew",
+	"initialisms": "FC"
+}
+, {
+	"id": "304",
+	"pubname": "Delirium Tremens Group",
+	"initialisms": "DTG"
+}
+, {
+	"id": "305",
+	"pubname": "Unpacking Gods",
+	"initialisms": "UG"
+}
+, {
+	"id": "306",
+	"pubname": "Tristar & Red Sector Inc., Lightforce, Fusion",
+	"initialisms": "TLF"
+}
+, {
+	"id": "307",
+	"pubname": "Master Artists Guide For The Elite",
+	"initialisms": "MAGE"
+}
+, {
+	"id": "308",
+	"pubname": "The UnderGround Oasis BBS",
+	"initialisms": "TUGO"
+}
+, {
+	"id": "309",
+	"pubname": "Doomsday Enema BBS",
+	"initialisms": "TDE"
+}
+, {
+	"id": "310",
+	"pubname": "International Software Traders",
+	"initialisms": "IST"
+}
+, {
+	"id": "311",
+	"pubname": "The Crime Syndicate BBS",
+	"initialisms": "TCS"
+}
+, {
+	"id": "312",
+	"pubname": "Highly Artisticaly Talented Enterprises",
+	"initialisms": "HATE"
+}
+, {
+	"id": "313",
+	"pubname": "Highly Artistically Talented Enterprises",
+	"initialisms": "HATE"
+}
+, {
+	"id": "314",
+	"pubname": "Lush Software Designs BBS",
+	"initialisms": "LSD"
+}
+, {
+	"id": "315",
+	"pubname": "Arab Team 4 Reverse Engineering",
+	"initialisms": "AT4RE"
+}
+, {
+	"id": "316",
+	"pubname": "The Reversers Ultimate Epidemic",
+	"initialisms": "TRUE"
+}
+, {
+	"id": "317",
+	"pubname": "Six Generation BBS",
+	"initialisms": "TSG"
+}
+, {
+	"id": "318",
+	"pubname": "Pirates At Large",
+	"initialisms": "PAL"
+}
+, {
+	"id": "319",
+	"pubname": "DVT",
+	"initialisms": "Devotion"
+}
+, {
+	"id": "320",
+	"pubname": "INC Documentation Division",
+	"initialisms": "IDD"
+}
+, {
+	"id": "321",
+	"pubname": "Software Pirates Inc",
+	"initialisms": "SPI"
+}
+, {
+	"id": "322",
+	"pubname": "Live Now Die Later",
+	"initialisms": "LnDL"
+}
+, {
+	"id": "323",
+	"pubname": "Cracking For Fun",
+	"initialisms": "CFF"
+}
+, {
+	"id": "324",
+	"pubname": "Cracking Is Number 1",
+	"initialisms": "CiN1"
+}
+, {
+	"id": "325",
+	"pubname": "Reverse Engineering Passion Team",
+	"initialisms": "RePT"
+}
+, {
+	"id": "326",
+	"pubname": "Anti Security Agency",
+	"initialisms": "ASA"
+}
+, {
+	"id": "327",
+	"pubname": "Reverse Engineering In Software",
+	"initialisms": "REiS"
+}
+, {
+	"id": "328",
+	"pubname": "Masters Of The Art Experience",
+	"initialisms": "MAX"
+}
+, {
+	"id": "329",
+	"pubname": "Portable Apps Crew Europe",
+	"initialisms": "PACE"
+}
+, {
+	"id": "330",
+	"pubname": "United File Traders",
+	"initialisms": "UFT"
+}
+, {
+	"id": "331",
+	"pubname": "Techno Brain",
+	"initialisms": "TCB"
+}
+, {
+	"id": "332",
+	"pubname": "Software Liberation Army",
+	"initialisms": "SLA"
+}
+, {
+	"id": "333",
+	"pubname": "The Software Innovation Network",
+	"initialisms": "SIN"
+}
+, {
+	"id": "334",
+	"pubname": "Syndromes Mega Utility Team",
+	"initialisms": "SMUT"
+}
+, {
+	"id": "335",
+	"pubname": "Lethal Software Distributors",
+	"initialisms": "LSD"
+}
+, {
+	"id": "336",
+	"pubname": "United Serbian Couriers Association",
+	"initialisms": "USCA"
+}
+, {
+	"id": "337",
+	"pubname": "Arcane Corporate Elite",
+	"initialisms": "ACE"
+}
+, {
+	"id": "338",
+	"pubname": "Hardcore Elite Mother Phuckers",
+	"initialisms": "HEMP"
+}
+, {
+	"id": "339",
+	"pubname": "One Mans Burden",
+	"initialisms": "OMB"
+}
+]}
