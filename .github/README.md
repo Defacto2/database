@@ -10,7 +10,7 @@ Defacto2 releases daily exports of the MySQL 5.7 database for download.
 
 The daily export that uses `DROP TABLE`, `CREATE TABLE` and `INSERT` statements, __to replace all existing__ tables and data.
 
-[INSERT SQL](https://defacto2.net/sql/d2-sql-insert.sql) <small>([SHA1](https://defacto2.net/sql/d2-sql-insert.sql.sha1))</small>
+__[INSERT SQL download](https://defacto2.net/sql/d2-sql-insert.sql)__ <small>([SHA1](https://defacto2.net/sql/d2-sql-insert.sql.sha1))</small>
 
 `d2-sql-insert.sql`
 
@@ -18,13 +18,13 @@ The daily export that uses `DROP TABLE`, `CREATE TABLE` and `INSERT` statements,
 
 The daily export that uses `REPLACE INTO` statements __to update__ any existing data.
 
-[UPDATE SQL](https://defacto2.net/sql/d2-sql-update.sql) <small>([SHA1](https://defacto2.net/sql/d2-sql-update.sql.sha1))</small>
+__[UPDATE SQL download](https://defacto2.net/sql/d2-sql-update.sql)__ <small>([SHA1](https://defacto2.net/sql/d2-sql-update.sql.sha1))</small>
 
 `d2-sql-update.sql`
 
 #### Migrate to SQLite3
 
-[mysql2sqlite](https://github.com/dumblob/mysql2sqlite) will successfully convert `d2-sql-insert.sql` into a SQLite3 database.
+[mysql2sqlite](https://github.com/dumblob/mysql2sqlite) will convert `d2-sql-insert.sql` to a SQLite3 database.
 
 ```bash
 # download the mysql database
