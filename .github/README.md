@@ -1,14 +1,23 @@
 # Defacto2 database exports
 
-![MySQL](https://img.shields.io/badge/mysql-5.7-blue?style=flat-square)
+![MySQL](https://img.shields.io/badge/mysql-8-blue?style=flat-square)
 
-### Daily MySQL dumps
+### Daily MySQL exports
 
-Defacto2 releases daily exports of the MySQL 5.7 database for download.
+Defacto2 releases daily exports of the MySQL database for download. You need a preconfigured and running database server that can handle MySQL syntax. Any of these database applications are suitable.
+
+[MySQL Community](https://dev.mysql.com/downloads/mysql/),
+[Percona for MySQL](https://www.percona.com/software/mysql-database/percona-server), [MariaDB](https://mariadb.com).
+
+Or, even easier create and use a Docker container.
+
+```sh
+# todo
+```
 
 #### Insert
 
-The daily export that uses `DROP TABLE`, `CREATE TABLE` and `INSERT` statements, __to replace all existing__ tables and data.
+Insert is the daily export that uses `DROP TABLE`, `CREATE TABLE` and `INSERT` statements, __to replace all existing__ tables and data.
 
 __[INSERT SQL download](https://defacto2.net/sql/d2-sql-insert.sql)__ <small>([SHA1](https://defacto2.net/sql/d2-sql-insert.sql.sha1))</small>
 
@@ -16,13 +25,32 @@ __[INSERT SQL download](https://defacto2.net/sql/d2-sql-insert.sql)__ <small>([S
 
 #### Update
 
-The daily export that uses `REPLACE INTO` statements __to update__ any existing data.
+Update is the daily export that uses `REPLACE INTO` statements __to update__ any existing data.
 
 __[UPDATE SQL download](https://defacto2.net/sql/d2-sql-update.sql)__ <small>([SHA1](https://defacto2.net/sql/d2-sql-update.sql.sha1))</small>
 
 `d2-sql-update.sql`
 
-#### Migrate to SQLite3
+---
+
+#### Import to MySQL
+
+In a terminal use the MySQL client to import the data:
+
+```bash
+# download the sql data
+wget https://defacto2.net/sql/d2-sql-insert.sql
+
+# import the sql data to the mysql database 
+# using the database root account
+mysql -u root < d2-sql-insert.sql
+```
+
+I recommend using [Adminer](https://www.adminer.org) for data browsing and management, or [DBeaver Community](https://dbeaver.io) also works.
+
+---
+
+#### Import to SQLite3
 
 [mysql2sqlite](https://github.com/dumblob/mysql2sqlite) will convert `d2-sql-insert.sql` to a SQLite3 database.
 
@@ -38,33 +66,19 @@ chmod +x mysql2sqlite
 ./mysql2sqlite d2-sql-insert.sql | sqlite3 d2.db
 ```
 
-#### Licence
+---
 
-The data and these exports are under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence.
+### Docker
+
+Dec 2022 - out of the box mariadb supports amd64/arm64 and a couple of other architectures.
+
+
 
 ---
 
-### How to use the SQL
+#### Licence
 
-You need a preconfigured and running database server that can handle MySQL 5.7 syntax. Any of these database applications are suitable.
-
-- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/5.7.html) v5.7
-- [Percona Server](https://www.percona.com/doc/percona-server/5.7/index.html) v5.7 \*
-- [MariaDB](https://mariadb.com) v10.2+ \*
-
-<small>\* A drop in replacement for MySQL 5.7</small>
-
-##### In a terminal use the MySQL client to import the data:
-
-```bash
-# download the database
-wget https://defacto2.net/sql/d2-sql-insert.sql
-
-# import the data to the mysql database using the database root account.
-mysql -u root < d2-sql-insert.sql
-```
-
-I recommend using [Adminer](https://www.adminer.org) for data browsing and management, though [DBeaver Community](https://dbeaver.io) also works fine.
+The data and these exports are under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence.
 
 ---
 
