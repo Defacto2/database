@@ -48,6 +48,8 @@ services:
     image: adminer
     restart: always
     container_name: web_admin
+    networks:
+      - back-tier
     ports:
       - 8080:8080
 
