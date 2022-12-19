@@ -1,23 +1,41 @@
 # Defacto2 database exports
 
-![MySQL](https://img.shields.io/badge/mysql-8-blue?style=flat-square)
+![MySQL](https://img.shields.io/badge/mysql-compatible-green?style=flat-square)
 
 ### Daily MySQL exports
 
-Defacto2 releases daily exports of the MySQL database for download. You need a preconfigured and running database server that can handle MySQL syntax. Any of these database applications are suitable.
+Defacto2 releases daily exports of the MySQL database for download. You will need Docker or a preconfigured and running database server that can handle MySQL syntax. Any of these database applications is suitable.
 
 [MySQL Community](https://dev.mysql.com/downloads/mysql/),
 [Percona for MySQL](https://www.percona.com/software/mysql-database/percona-server), [MariaDB](https://mariadb.com).
 
-Or, even easier create and use a Docker container.
+### Docker
+
+The easiest way to create the database is with [Docker Compose](https://www.docker.com/products/docker-desktop/), which will download and make while running on the default MySQL port of 3306 with a website admin interface.
 
 ```sh
-# todo
+git clone git@github.com:Defacto2/database.git
+cd database
+docker compose up
 ```
+
+If you use Docker and compose, you can skip the rest of the readme.
+
+---
+
+### Create and import
+
+#### Create
+
+Create is a one-time statement that initializes a new database, file table, and table columns.
+
+__[CREATE TABLE SQL download](https://raw.githubusercontent.com/Defacto2/database/main/sql/create-table.sql)__ 
+
+`create-table.sql`
 
 #### Insert
 
-Insert is the daily export that uses `DROP TABLE`, `CREATE TABLE` and `INSERT` statements, __to replace all existing__ tables and data.
+Insert is the daily export that uses an `INSERT` statement __to create all new__ data.
 
 __[INSERT SQL download](https://defacto2.net/sql/d2-sql-insert.sql)__ <small>([SHA1](https://defacto2.net/sql/d2-sql-insert.sql.sha1))</small>
 
@@ -25,68 +43,61 @@ __[INSERT SQL download](https://defacto2.net/sql/d2-sql-insert.sql)__ <small>([S
 
 #### Update
 
-Update is the daily export that uses `REPLACE INTO` statements __to update__ any existing data.
+The daily export update uses `REPLACE INTO` statements __to update__ any existing data.
 
 __[UPDATE SQL download](https://defacto2.net/sql/d2-sql-update.sql)__ <small>([SHA1](https://defacto2.net/sql/d2-sql-update.sql.sha1))</small>
 
 `d2-sql-update.sql`
 
----
+#### Instructions
 
-#### Import to MySQL
-
-In a terminal use the MySQL client to import the data:
+In a terminal, use the MySQL client to import the data:
 
 ```bash
-# download the sql data
-wget https://defacto2.net/sql/d2-sql-insert.sql
+# download the create table and insert data statements
+curl https://raw.githubusercontent.com/Defacto2/database/main/sql/create-table.sql --output create-table.sql
+curl https://defacto2.net/sql/d2-sql-insert.sql --output d2-sql-insert.sql
 
-# import the sql data to the mysql database 
-# using the database root account
-mysql -u root < d2-sql-insert.sql
+# import the create table statement to the database using 
+# the root account and prompt the root password
+mysql -u root -p < create-table.sql
+
+# import the SQL data to the new defacto2-inno database 
+mysql -u root -p --database defacto2-inno < d2-sql-insert.sql
 ```
 
-I recommend using [Adminer](https://www.adminer.org) for data browsing and management, or [DBeaver Community](https://dbeaver.io) also works.
-
----
-
-#### Import to SQLite3
-
-[mysql2sqlite](https://github.com/dumblob/mysql2sqlite) will convert `d2-sql-insert.sql` to a SQLite3 database.
+To test the table creation and data.
 
 ```bash
-# download the mysql database
-wget https://defacto2.net/sql/d2-sql-insert.sql
+mysql -u root -p --database defacto2-inno
+```
 
-# download mysql2sqlite & apply an execute attribute
-wget https://raw.githubusercontent.com/dumblob/mysql2sqlite/master/mysql2sqlite
-chmod +x mysql2sqlite
+```mysql
+mysql> SELECT COUNT(*) FROM files;
 
-# export mysql to sqlite3 database
-./mysql2sqlite d2-sql-insert.sql | sqlite3 d2.db
++----------+
+| COUNT(*) |
++----------+
+|    41384 |
++----------+
+1 row in set (0.01 sec)
+
+mysql> exit
 ```
 
 ---
 
-### Docker
+#### License
 
-Dec 2022 - out of the box mariadb supports amd64/arm64 and a couple of other architectures.
-
-
-
----
-
-#### Licence
-
-The data and these exports are under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence.
+The data and these exports are under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
 
 ---
 
 ### Datasets
 
-The data is broken down into three tables, `files`, `groups` and `netresources`
+The data gets separated into three tables, `files`, `groups`, and `netresources`
 
-- `files` form the core of the site and compose of tens of thousands rows of hosted data.
+- `files` that form the site's core and compose of tens of thousands rows of hosted data.
 - `groups` comprise of only initialisms and acronyms for scene groups.
 - `netresources` are online links to other scene resources, usually websites.
 
