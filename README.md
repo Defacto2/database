@@ -19,6 +19,8 @@ cd database
 docker compose up
 ```
 
+The web interface is found at http://localhost:8080, _username_ `root` and _password_ `example`.
+
 If you use Docker and compose, you can skip the rest of the readme.
 
 ---
