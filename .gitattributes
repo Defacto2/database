@@ -1,0 +1,2 @@
+# always enforce Unix end-of-line linefeed or things may break
+*.sql Dockerfile eol=lf

@@ -1,31 +1,82 @@
-# Defacto2 database exports
+# Defacto2 database
 
-![MySQL](https://img.shields.io/badge/mysql-compatible-green?style=flat-square)
+Defacto2 releases daily exports of the MySQL database for download. You will need [Docker](https://www.docker.com/products/docker-desktop/) or a preconfigured and running database server that can handle MySQL syntax.
 
-### Daily MySQL exports
+There's also a repository for a Docker, [Defacto2 Postgres database](https://github.com/Defacto2/database-ps).
 
-Defacto2 releases daily exports of the MySQL database for download. You will need Docker or a preconfigured and running database server that can handle MySQL syntax. Any of these database applications is suitable.
+## Table of contents
 
-[MySQL Community](https://dev.mysql.com/downloads/mysql/),
-[Percona for MySQL](https://www.percona.com/software/mysql-database/percona-server), [MariaDB](https://mariadb.com).
+- [Defacto2 database](#defacto2-database)
+  - [Table of contents](#table-of-contents)
+  - [Docker](#docker)
+    - [Remove, reset or resync the database data](#remove-reset-or-resync-the-database-data)
+  - [SQL create and import](#sql-create-and-import)
+      - [Create](#create)
+      - [Insert](#insert)
+      - [Update](#update)
+      - [Instructions](#instructions)
+  - [License](#license)
+  - [Datasets](#datasets)
+    - [Files](#files)
+    - [Groups](#groups)
+    - [Netresources](#netresources)
 
-### Docker
+## Docker
 
-The easiest way to create the database is with [Docker Compose](https://www.docker.com/products/docker-desktop/), which will download and make while running on the default MySQL port of 3306 with a website admin interface.
+The recommended and easiest way to create the database is with [Docker Compose](https://www.docker.com/products/docker-desktop/). Which will download and setup a database server with a website admin interface.
 
 ```sh
+# download this repository
 git clone git@github.com:Defacto2/database.git
+
+# change to the database directory
 cd database
+
+# run the import and start the database
+# (tap Ctrl+c to later stop)
 docker compose up
 ```
 
-The web interface is found at http://localhost:8080, _username_ `root` and _password_ `example`.
+Afterwards, the web interface for the database is found at http://localhost:8080/?server=db&username=root&db=defacto2-inno.
 
-If you use Docker and compose, you can skip the rest of the readme.
+- _System_ `MySQL`
+- _Server_ `db`
+- _Username_ `root`
+- __Password__ `example`
+- _Database_ `defacto2-inno`
 
----
+Congratulations, you now have a running database server with the Defacto2 data.
 
-### Create and import
+To stop the database server, tap `Ctrl+c` in the terminal.
+
+The rest of the readme can be ignored. It's for those who want to create the database from scratch.
+
+### Remove, reset or resync the database data
+
+The simplist way to reset the database is to delete the container and start again. **This will delete all the data and the database container.**
+
+```sh
+cd database
+
+# force-stop the database container
+docker compose kill
+
+# delete all the containers and associated volumes
+docker compose rm -v sql_dump database web_admin
+```
+
+Then rerun the [Docker instructions](#docker) above.
+
+
+## SQL create and import
+
+Using your preferred database application, you can use one of the following SQL statements to create the database and import the data.
+
+Either of these database applications should be suitable.
+
+- [MySQL Community](https://dev.mysql.com/downloads/mysql/)
+- [Percona for MySQL](https://www.percona.com/software/mysql-database/percona-server)
+- [MariaDB](https://mariadb.com)
 
 #### Create
 
@@ -56,7 +107,7 @@ __[UPDATE SQL download](https://defacto2.net/sql/d2-sql-update.sql)__ <small>([S
 In a terminal, use the MySQL client to import the data:
 
 ```bash
-# download the create table and insert data statements
+# download both the create table and insert data SQL statements
 curl https://raw.githubusercontent.com/Defacto2/database/main/sql/create-table.sql --output create-table.sql
 curl https://defacto2.net/sql/d2-sql-insert.sql --output d2-sql-insert.sql
 
@@ -87,23 +138,19 @@ mysql> SELECT COUNT(*) FROM files;
 mysql> exit
 ```
 
----
-
-#### License
+## License
 
 The data and these exports are under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
 
----
+## Datasets
 
-### Datasets
-
-The data gets separated into three tables, `files`, `groups`, and `netresources`
+The data gets separated into three tables, `files`, `groups`, and `netresources`.
 
 - `files` that form the site's core and compose of tens of thousands rows of hosted data.
 - `groups` comprise of only initialisms and acronyms for scene groups.
 - `netresources` are online links to other scene resources, usually websites.
 
-#### Files
+### Files
 
 | Column                    | Description                                                         | Example value                              |
 | ------------------------- | ------------------------------------------------------------------- | ------------------------------------------ |
@@ -155,7 +202,7 @@ The data gets separated into three tables, `files`, `groups`, and `netresources`
 | updatedby                 | The id of the account which updated this record                     | `ADB7C2BF-7221-467B-B813-3636FE4AE16B`     |
 | updatedat                 | When this record was last updated                                   | 2017-03-19 05:57:12                        |
 
-##### Groups
+### Groups
 
 | Column      | Description                 | Example value    |
 | ----------- | --------------------------- | ---------- |
@@ -163,7 +210,7 @@ The data gets separated into three tables, `files`, `groups`, and `netresources`
 | pubname     | Unique group id             | Razor 1911 |
 | initialisms | Acronym or initialism value | RZR        |
 
-##### Netresources
+### Netresources
 
 | Column           | Description                                        | Example value                                            |
 | ---------------- | -------------------------------------------------- | -------------------------------------------------- |
