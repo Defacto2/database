@@ -2,17 +2,18 @@
 
 The Defacto2 database collects thousands of records documenting the history of the PC Scene. This data powers the [Defacto2](https://defacto2.net) website.
 
-You can download a daily export of the [Postgres](https://www.postgresql.org) database as an SQL document from https://defacto2.net/sql/files.sql.
+You can download a daily export of the [PostgreSQL](https://www.postgresql.org) database as an SQL document from https://defacto2.net/sql/files.sql.
 
-> [!NOTE] Postgres version 16+ is recommended for the best compatibility.
+> [!NOTE]
+> PostgreSQL version 16+ is recommended for the best compatibility.
 
 ### First time setup
 
-These instructions are for a Linux or macOS environment with a running Postgres application and
+These instructions are for a Linux or macOS environment with a running PostgreSQL application and
 assumes the `postgres` username.
 
 1. Download the SQL export file
-2. Create a new database in your Postgres server
+2. Create a new database in your PostgreSQL server
 3. Import the SQL export file into the new database
 4. Test the table creation and data
 
@@ -40,7 +41,8 @@ psql --username=postgres --dbname='defacto2_ps' --command='SELECT COUNT(*) FROM 
   50000
 (1 row)
 ```
-> [!TIP] The count result will depend on the latest export which will not be 50000 exactly.
+> [!TIP]
+> The count result will depend on the latest export which will not be 50000 exactly.
 
 ### Update records with the latest data
 
@@ -54,7 +56,7 @@ psql --username=postgres --dbname=defacto2_ps --file=files.sql
 
 ### Update a Docker container with the latest data
 
-These instructions are for a Linux or macOS environment with a running a Docker [Postgres container](https://hub.docker.com/_/postgres) with the following assumptions:
+These instructions are for a Linux or macOS environment with a running a Docker [PostgreSQL container](https://hub.docker.com/_/postgres) with the following assumptions:
 
 - Container name: `pgdb` 
 - Database name: `defacto2_ps`
