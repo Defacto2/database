@@ -1,11 +1,14 @@
 # Defacto2, database
 
-The Defacto2 database collects thousands of records documenting the history of the PC Scene. This data powers the [Defacto2](https://defacto2.net) website.
+The Defacto2 database collects thousands of records documenting the history of the PC Scene. 
+This data powers the [Defacto2](https://defacto2.net) website.
 
-You can download a daily export of the [PostgreSQL](https://www.postgresql.org) database as an SQL document from https://defacto2.net/sql/files.sql.
+There is a SQL document download of a daily export of the PostgreSQL database: [defacto2.net/sql/files.sql](https://defacto2.net/sql/files.sql).
+
+There is a RESTful API available: [defacto2.net/api](https://defacto2.net/api).
 
 > [!NOTE]
-> PostgreSQL version 16+ is recommended for the best compatibility.
+> [PostgreSQL](https://www.postgresql.org) version 16+ is recommended for the best compatibility.
 
 ### First time setup
 
