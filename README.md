@@ -1,14 +1,17 @@
 # Defacto2, database
 
-The Defacto2 database collects thousands of records documenting the history of the PC Scene. 
-This data powers the [Defacto2](https://defacto2.net) website.
+The Defacto2 database collects thousands of records documenting the history of the PC Scene and is 
+the data powers the famed [Defacto2](https://defacto2.net) website.
 
-There is a SQL document download of a daily export of the PostgreSQL database: [defacto2.net/sql/files.sql](https://defacto2.net/sql/files.sql).
+> There are <ins>daily exports</ins> of the **SQL database**.
+>
+> [**DOWNLOAD**: defacto2.net/sql/files.sql](https://defacto2.net/sql/files.sql).
+>
+> [PostgreSQL](https://www.postgresql.org) 16+ is recommended for compatibility.
 
-There is a RESTful API available: [defacto2.net/api](https://defacto2.net/api).
-
-> [!NOTE]
-> [PostgreSQL](https://www.postgresql.org) version 16+ is recommended for the best compatibility.
+> [!TIP]
+> There is a **RESTful** API available.<br>
+> [defacto2.net/api](https://defacto2.net/api).
 
 ### First time setup
 
@@ -21,8 +24,9 @@ assumes the `postgres` username.
 4. Test the table creation and data
 
 ```sh
-# download the latest SQL file
 cd ~
+
+# download the latest SQL file
 curl https://defacto2.net/sql/files.sql --output files.sql
 
 # create the database
@@ -66,8 +70,9 @@ These instructions are for a Linux or macOS environment with a running a Docker 
 - Database username: `postgres`
 
 ```sh
-# download the SQL file
 cd ~
+
+# download the SQL file
 curl https://defacto2.net/sql/files.sql --output files.sql
 
 # copy the SQL file into the container
