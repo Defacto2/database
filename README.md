@@ -26,13 +26,13 @@ assumes the `postgres` username.
 ```sh
 cd ~
 
-# download the latest SQL file
+# 1) download the latest SQL file
 curl https://defacto2.net/sql/files.sql --output files.sql
 
-# create the database
+# 2) create the database
 createdb --username=postgres defacto2_ps
 
-# import the table and the data
+# 3) import the table and the data
 psql --username=postgres --dbname=defacto2_ps --file=files.sql
 ```
 
